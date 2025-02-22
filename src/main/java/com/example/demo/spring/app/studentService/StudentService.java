@@ -1,10 +1,9 @@
-package studentService;
+package com.example.demo.spring.app.studentService;
 
 
-import entity.Student;
+import com.example.demo.spring.app.entity.Student;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import studentRepository.StudentRepository;
+import com.example.demo.spring.app.studentRepository.StudentRepository;
 
 import java.util.Map;
 

@@ -1,6 +1,6 @@
-package studentRepository;
+package com.example.demo.spring.app.studentRepository;
 
-import entity.Student;
+import com.example.demo.spring.app.entity.Student;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import java.util.Map;
 @Repository
 public class StudentRepository {
 
-    public Map<Long, Student> students() {
+    public Map<Long, Student> getStudents() {
         Map<Long, Student> students = new HashMap<>();
 
         Student student1 = new Student("John", "Doe", 20);
@@ -37,12 +37,9 @@ public class StudentRepository {
         return students;
     }
 
-    public Map<Long, Student> getStudents(){
-        return students();
-    }
 
     public Student getStudentById(Long studentId) {
-        return students().get(studentId);
+        return getStudents().get(studentId);
     }
 
 }
